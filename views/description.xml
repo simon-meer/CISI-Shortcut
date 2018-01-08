@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+ <ShortName>CISI Shortcut</ShortName>
+ <Description>Search engine for Monithor</Description>
+ <InputEncoding>UTF-8</InputEncoding>
+ <Tags>CISI shortcut</Tags>
+ <Url type="text/html" method="GET" template="<%= baseUrl %>/goto/{searchTerms}" />
+  <Url type="application/x-suggestions+json" method="GET" rel="suggestions"
+ template="<%= baseUrl %>/suggestions/{searchTerms}" />
+ <Image height="36" width="36" type="image/png"><%= baseUrl %>/icon.png</Image>
+</OpenSearchDescription>
