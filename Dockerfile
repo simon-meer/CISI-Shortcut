@@ -8,5 +8,6 @@ RUN npm install
 
 # Bundle app source
 COPY . .
+RUN chmod -r 777 /usr/src/app
 
 CMD [ "npm", "start" ]
